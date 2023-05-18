@@ -3,7 +3,7 @@ version: '3.7'
 services:
   vaultwarden:
     image: vaultwarden/server:latest
-    restart: unless-stopped
+    restart: always
     container_name: vaultwarden
     env_file: .env
     volumes:
